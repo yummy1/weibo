@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendStatusViewController">
+            <connections>
+                <outlet property="reportsIcon" destination="xyF-cw-BOg" id="V3I-48-cQ9"/>
+                <outlet property="reportsText" destination="dli-Yf-NTs" id="qdc-vG-ffA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xyF-cw-BOg">
+                    <rect key="frame" x="8" y="4" width="52" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="DqF-Ah-y9d"/>
+                        <constraint firstAttribute="width" constant="52" id="ISw-eO-8vd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vra-Td-Mq7">
+                    <rect key="frame" x="68" y="4" width="221" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dli-Yf-NTs">
+                    <rect key="frame" x="68" y="25" width="213" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="qeA-16-wEm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dli-Yf-NTs" secondAttribute="trailing" constant="16" id="5RY-Mr-mJo"/>
+                <constraint firstItem="vra-Td-Mq7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="8Va-Cr-6xK"/>
+                <constraint firstAttribute="trailing" secondItem="vra-Td-Mq7" secondAttribute="trailing" constant="8" id="P3U-mm-N0t"/>
+                <constraint firstItem="dli-Yf-NTs" firstAttribute="leading" secondItem="xyF-cw-BOg" secondAttribute="trailing" constant="8" id="fxu-cN-SXe"/>
+                <constraint firstItem="xyF-cw-BOg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="v8M-Tc-LuR"/>
+                <constraint firstItem="vra-Td-Mq7" firstAttribute="leading" secondItem="xyF-cw-BOg" secondAttribute="trailing" constant="8" id="vUM-Ta-7W2"/>
+                <constraint firstItem="xyF-cw-BOg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="wWN-Rn-89z"/>
+                <constraint firstItem="dli-Yf-NTs" firstAttribute="top" secondItem="vra-Td-Mq7" secondAttribute="bottom" constant="1" id="xOi-Kw-WKy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="297.5" y="182"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

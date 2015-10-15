@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StatusFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="27"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f16-vp-JXa">
+                    <rect key="frame" x="66" y="6" width="29" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="23" image="statusdetail_icon_retweet">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHt-np-Wz3">
+                    <rect key="frame" x="146" y="6" width="29" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="24" image="statusdetail_icon_comment">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHJ-rk-DLc">
+                    <rect key="frame" x="226" y="6" width="29" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="34" image="statusdetail_icon_like">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="rHJ-rk-DLc" secondAttribute="centerY" id="Anl-u7-SHc"/>
+                <constraint firstItem="rHJ-rk-DLc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.5" id="ZDp-Lu-BUM"/>
+                <constraint firstAttribute="centerY" secondItem="xHt-np-Wz3" secondAttribute="centerY" id="bPZ-PV-t4m"/>
+                <constraint firstItem="f16-vp-JXa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.5" id="gEi-ma-44O"/>
+                <constraint firstAttribute="centerX" secondItem="xHt-np-Wz3" secondAttribute="centerX" id="qPD-Vt-ZIK"/>
+                <constraint firstAttribute="centerY" secondItem="f16-vp-JXa" secondAttribute="centerY" id="r1T-zY-qtF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentButton" destination="xHt-np-Wz3" id="RTC-ty-HkA"/>
+                <outlet property="likeButton" destination="rHJ-rk-DLc" id="tE6-7B-kZO"/>
+                <outlet property="reTwitterButton" destination="f16-vp-JXa" id="fYo-Sv-6P0"/>
+            </connections>
+            <point key="canvasLocation" x="282" y="-42.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="statusdetail_icon_comment" width="14" height="14"/>
+        <image name="statusdetail_icon_like" width="14" height="14"/>
+        <image name="statusdetail_icon_retweet" width="14" height="14"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
